@@ -1,0 +1,10 @@
+{
+  "baseUrl": "",
+  "defaultCommandTimeout": 16000,
+  "env": {
+    "foor": "bar",
+    "key": "value"
+  },
+  "projectId": "jiv98f",
+  "supportFile": "cypress/support/commands.js"
+}
