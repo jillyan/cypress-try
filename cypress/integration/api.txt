@@ -1,0 +1,16 @@
+set value:
+cy.get('input[test]')
+  .invoke('attr', 'test', 'my new value')
+  .should('have.attr', 'test', 'my new value');
+
+Cypress uses jQuery under the hood, so you can invoke any function in jQuery like this. You could alternatively use plain JavaScript after yielding the input using .then():
+
+cy.get('input[test]').then(function($input){
+  $input[0].setAttribute('test', 'my new value')
+})
+.should('have.attr', 'test', 'my new value')
+
+
+
+
+
